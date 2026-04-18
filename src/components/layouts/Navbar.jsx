@@ -2,6 +2,7 @@ import React from 'react';
 import Logo from './Logo';
 import Link from 'next/link';
 import NavLink from '../buttons/NavLink';
+import { FiShoppingCart } from "react-icons/fi";
 
 const Navbar = () => {
 
@@ -32,7 +33,7 @@ const Navbar = () => {
       </div>
       <ul
         tabIndex="-1"
-        className="menu menu-sm dropdown-content bg-base-100 rounded-box z-1 mt-3 w-52 p-2 shadow flex">
+        className="menu menu-sm dropdown-content bg-base-100 rounded-box z-1 mt-3 w-52 p-2 shadow">
         {nav}
       </ul>
     </div>
@@ -44,7 +45,10 @@ const Navbar = () => {
       {nav}
     </ul>
   </div>
-  <div className="navbar-end">
+  <div className="navbar-end space-x-5">
+    <Link href={"/cart"} className='btn btn-primary'>
+    <FiShoppingCart />
+    </Link>
     <Link href={"/login"}>
     <button className='btn btn-primary btn-outline'>Login</button>
     </Link>
