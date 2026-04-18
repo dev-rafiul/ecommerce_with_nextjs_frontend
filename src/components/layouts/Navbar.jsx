@@ -1,7 +1,17 @@
 import React from 'react';
 import Logo from './Logo';
+import Link from 'next/link';
+import NavLink from '../buttons/NavLink';
 
 const Navbar = () => {
+
+
+  const nav = <>
+  <li>
+    <NavLink></NavLink>
+  </li>
+  </>
+
     return (
         <div className="navbar bg-base-100">
   <div className="navbar-start">
