@@ -1,12 +1,18 @@
 import Banner from '@/components/home/Banner'
+import Products from '@/components/home/Products'
 import React from 'react'
 
-export default function page() {
+export default function Home() {
   return (
-    <div className=''>
+    <div className='space-y-20'>
       
-      <section>
+      <section className=''>
         <Banner></Banner>
+      </section>
+
+
+      <section>
+        <Products></Products>
       </section>
     </div>
   )
